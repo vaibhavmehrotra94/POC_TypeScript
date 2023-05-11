@@ -18,3 +18,15 @@ const testObj = {
 }
 
 createTrip(testObj); // when passing object in this fashion ts will accept extra fields even when not defined in arg definition
+
+// creating custom types ( type alias )
+type User = {
+    name: string;
+    age: number;
+};
+
+function userMsg(user: User): string{
+    return `${user.name} is ${user.age} years old`
+}
+
+userMsg({name: "KP", age: 24})

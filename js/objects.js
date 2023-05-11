@@ -15,3 +15,7 @@ const testObj = {
     extra: "field is extra"
 };
 createTrip(testObj);
+function userMsg(user) {
+    return `${user.name} is ${user.age} years old`;
+}
+userMsg({ name: "KP", age: 24 });
